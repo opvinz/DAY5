@@ -1,5 +1,18 @@
 var datas = []
 
+function loadDummy(){
+    var data = {
+        ProjectName: "Dummy Project 1",
+        StartDate: "01/01/2023",
+        EndDate: "02/01/2023",
+        Description: "This is dummy",
+        uploadImg: "./assets/images/astronaut.jpg",
+        skills: ["nodejs", ]
+    }
+    datas.push(data)
+    reloadProjectData()
+}
+
 function getData(){
  
     let inputProjectName = document.getElementById("inputProjectName").value
@@ -66,15 +79,18 @@ function openDetail(i){
 }
         
 function openRemove(deletedIndex){
-
-    var temp_datas = []
-    for(let i=0; i< datas.length; i++){
-        if(i != deletedIndex){
-            temp_datas.push(datas[i])
+    if (deletedIndex == 0){
+        alert("Dummy tidak bisa dihapus")
+    }else{
+        var temp_datas = []
+        for(let i=0; i< datas.length; i++){
+            if(i != deletedIndex){
+                temp_datas.push(datas[i])
+            }
         }
+        datas = temp_datas
+        reloadProjectData()
     }
-    datas = temp_datas
-    reloadProjectData()
 }
    
 function reloadProjectData(){
