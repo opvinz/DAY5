@@ -1,114 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Dummy Project 1 - Day 5</title>
+    <link rel="icon" href="assets/images/147-1471079_jin-kazama-tattoo-clipart-png-download-draw-all.png" />
     
-    <title>Dumbways - Day 5</title>
-
     <!-- Font Awesome 6 -->
     <script src="https://kit.fontawesome.com/c92e202055.js" crossorigin="anonymous"></script>
     <!-- CSS Style -->
-    <link rel="stylesheet" href="assets/css/checkbox_style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
- 
-    <link rel="stylesheet" href="assets/css/myproject.css" />
+   
     <link rel="stylesheet" href="assets/css/myprojectdetail.css" />
 
-    <script>
-        function loadUpData(){
-            const urlParams = new URLSearchParams(window.location.search);
-            const ProjectName = urlParams.get('ProjectName');
-            // const base64Image = urlParams.get('base64Image');
-            document.getElementById("inputProjectName").innerHTML = ProjectName
-            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
-
-
-            const StartDate = urlParams.get('StartDate');
-            // const base64Image = urlParams.get('base64Image');
-            document.getElementById("inputStartDate").innerHTML = StartDate
-            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
-      
-            const EndDate = urlParams.get('EndDate');
-            // const base64Image = urlParams.get('base64Image');
-            document.getElementById("inputEndDate").innerHTML = EndDate
-            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
-
-            const Description = urlParams.get('Description');
-            // const base64Image = urlParams.get('base64Image');
-            document.getElementById("inputDescription").innerHTML = Description
-            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
-
-            const Technologies= urlParams.get('Technologies');
-            // const base64Image = urlParams.get('base64Image');
-            document.getElementById("skills").innerHTML = Technologies
-            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
-                        
-        }
-    </script>
-
 </head>
-<body onload="loadUpData()">
+<body >
 
-    <!-- NavBar -->
-    <nav>
-    <div class="left-side">
-        <a href="index.html">
-        <img src="assets/images/Dumbways.png" alt="Dumbways" style="width: 32px" />
-        </a>
-        <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="myproject.html" class="list-active">My Project</a>
-        </li>
-        </ul>
-    </div>
-    <div class="right-side">
-        <a href="contact_form.html"> Contact Me </a>
-    </div>
-    </nav>
-
-    <div class="container">
-        <h1 id="title">dumbways web app</h1>
+     <!-- NavBar -->
+     <nav>
+        <div class="left-side">
+          <a href="index.html">
+            <img src="assets/images/Dumbways.png" alt="Dumbways" style="width: 32px" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="myproject.html" class="list-active">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="contact_form.html"> Contact Me </a>
+        </div>
+      </nav>
+        
+     
+    <div class="container" style="padding-right: 24px; padding-left: 24px; padding-bottom: 30px;">
+        <h1 id="title">Dummy Project 1</h1>
         <div class="content">
-            <div id="mainPicture" class="picture">
-                <!-- <img src="https://source.unsplash.com/1000x400?technology" alt=""> -->
+            <div id="mainPicture" class="picture" style="margin:0px 80px;">
+                <img src="./assets/images/astronaut.jpg" alt="" style="width: 100%;" >
             </div>
-            <div class="information">
+            
+            <div class="information" style="padding: 24px;">
                 <div class="duration">
                     <h3>Duration</h3>
                     <div id="distanceTime">
                         <i class="fa-solid fa-calendar"></i>
-                        <span> 12 Jan 2021 - 11 Feb 2021</span>
+                        <span> 01 Jan 2023 - 01 Feb 2023</span>
                     </div>
                     <div id="distanceMonth">
                         <i class="fa-solid fa-clock"></i>
-                        <span>3 Month</span>
+                        <span>1 Month</span>
                     </div>
                 </div>
                 <div class="technologies">
                     <h3>Technologies</h3>
                     <div class="technologyIcon">
                         <span>
+                            <div class='fa-brands fa-node' alt="node">
+                            </div>
+                            &nbsp Node JS
+                        </span>
+                        <span>
                             <div class="fa-brands fa-react" alt="reactjs">
                             </div>
+                            &nbsp React JS
                         </span>
                         <span>
                             <div class="fa-brands fa-vuejs" alt="vuejs">
                             </div>
-                        </span>
-                        <span>
-                            <div class="class='fa-brands fa-node'" alt="nodejs">
-                            </div>
+                            &nbsp Vue JS
                         </span>
                         <span>
                             <div class="fa-brands fa-laravel" alt="laravel">
                             </div>
+                            &nbsp Laravel
                         </span>
                     </div>
                 </div>
@@ -117,36 +87,18 @@
 
         <div class="text">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, eos repellat? Sunt fugiat praesentium obcaecati aliquam amet hic molestiae autem veritatis alias, quidem illum id ipsa ab rerum quibusdam facere!
-                Numquam necessitatibus at porro fugiat laborum, maiores odit explicabo illum amet ut qui provident officia tempora animi exercitationem cupiditate. Aliquam laboriosam delectus possimus perferendis eaque neque blanditiis error deserunt in?
-                Laborum, mollitia harum. Unde doloribus earum dolor aut illo pariatur! Magni alias sunt quos deleniti, ipsam ipsa ea! Molestias qui vitae quo ex temporibus maiores quod modi soluta? Cum, aperiam.
-                Voluptates quibusdam laboriosam iure ipsum soluta facilis perferendis et magni? Obcaecati optio consectetur sint id hic. Consequatur qui natus molestias eum. Doloribus autem iusto odit perspiciatis. Veniam sunt iste doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quidem, fugit praesentium sed fugiat, vitae animi nihil deleniti magnam laudantium mollitia ad culpa reprehenderit tempora minima cumque obcaecati unde aliquam!
-                Vitae mollitia illo, assumenda odit non voluptate rem porro repellendus voluptatum tempore quibusdam similique tempora officia. Nobis, perspiciatis ducimus. Sunt voluptatibus recusandae incidunt dolores similique veniam, hic maiores ex necessitatibus!
-                Sit quasi modi, harum, accusantium delectus recusandae tenetur, ut facilis ab voluptatem maxime? Ratione similique, illo mollitia placeat dolorum beatae. Tempora consectetur cum laborum, necessitatibus quas perferendis nisi at repudiandae.
-                Aliquam expedita facilis est tempora quibusdam, non quae, tempore quis eligendi corporis doloremque quasi fugiat, pariatur sed adipisci sint itaque. Quos laboriosam debitis perspiciatis doloremque provident voluptates rem esse optio.
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex iure saepe fugiat alias illum enim sed? Dicta eligendi omnis nesciunt dolor non, alias debitis accusantium perspiciatis voluptas recusandae, sequi perferendis.
-                Inventore eligendi suscipit illo officiis dignissimos cum dicta dolor iste rerum obcaecati laboriosam qui velit, ratione aliquam facere consequuntur perspiciatis maiores eveniet dolores corrupti at sed. Accusantium corporis iusto perspiciatis!
-                Doloremque tenetur necessitatibus dignissimos facilis nihil, exercitationem tempore. Possimus, perspiciatis dolorem ratione ab sed consectetur fugit, voluptate enim ad, molestiae quidem fuga voluptatem placeat. Libero mollitia distinctio fugiat repellendus iusto.
-                Laudantium magnam eligendi, exercitationem libero delectus quo, accusantium unde quae quam qui ea cupiditate sunt repellat, tenetur pariatur debitis fugit officiis doloribus fuga nam enim possimus corrupti. Quas, eveniet alias.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate repellat quae quasi sequi distinctio, odio voluptatem optio? Beatae quis repudiandae veniam laboriosam culpa saepe quibusdam? Debitis voluptas pariatur similique!
-                Mollitia libero alias quo. At, reprehenderit. Ea cumque tenetur magni molestias, aliquid minima doloremque illo quis neque dicta corporis fuga necessitatibus culpa aperiam corrupti quod ex non aspernatur dolorem vitae!
-                Deleniti ipsam dolores porro, illo minus consequatur odio neque perferendis quis minima voluptatem est nesciunt, molestiae eius in sunt inventore corrupti cum rem ad, velit quidem. Dolor, voluptatibus cum. Optio.
-                Sunt nemo commodi reprehenderit ad nam voluptates maiores quisquam optio hic a, odio esse vero debitis obcaecati excepturi ab totam temporibus officiis, eveniet doloremque facere cupiditate quas. Officiis, deleniti sint!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit illum nesciunt ullam iste laboriosam et ipsum distinctio quae, quidem officia exercitationem rem ipsam, quasi optio aliquid sint tempora quisquam?
-                Iste itaque odio deleniti delectus sequi veniam, vel sit voluptatum repellendus dignissimos commodi eum ducimus, repudiandae error. Accusamus nemo alias quis aliquam ad itaque, odit minus facilis nulla perspiciatis architecto?
-                Molestias reprehenderit nemo quisquam, consequatur natus sapiente perspiciatis culpa soluta quibusdam dolore. Modi, autem laboriosam, error placeat dolorem quis dolor commodi pariatur consequatur distinctio voluptates ducimus, nulla illum quidem nam.
-                Possimus hic voluptates nisi pariatur voluptatem obcaecati est maxime nulla id magnam quidem ipsam commodi aut nesciunt mollitia, suscipit debitis. Consequuntur aut magnam repellendus sapiente adipisci necessitatibus sed molestias minima.
+                &ensp;Jakarta, CNN Indonesia -- Bayang ketidakpastian masih diperkirakan masih membayangi ekonomi dunia pada 2023 mendatang. Penyebabnya, masih dipicu oleh perang yang berkecamuk antara Rusia dengan Ukraina.
+                Perang mengakibatkan gangguan pasokan beberapa komoditas penting dunia, seperti; minyak, gas, gandum. Gangguan memicu lonjakan harga komoditas dan inflasi yang kemudian mendorong sejumlah bank sentral dunia mengerak bunga acuan mereka yang berpotensi menekan kinerja pertumbuhan ekonomi.
+                Sejumlah lembaga dunia bahkan sudah membuat proyeksi atas potensi pelemahan kinerja pertumbuhan itu. Misalnya Dana Moneter Internasional (IMF) yang memperkirakan ekonomi global hanya tumbuh 2,9 persen pada tahun depan.
+                Sementara pertumbuhan ekonomi RI diproyeksi hanya 5 persen pada 2023. Angka ini mendapat revisi ketiga kalinya dari proyeksi April sebesar 5,9 persen dan Juli di kisaran 5,2 persen.
+                Bank Dunia juga memangkas proyeksi pertumbuhan ekonomi Indonesia pada 2023 dari 5,1 persen menjadi 4,8 persen. Sementara inflasi diproyeksi mencapai 4,5 persen tahun depan.
+                Kendati demikian, Direktur Bank Dunia untuk Indonesia dan Timor-Leste Satu Kahkonen mengatakan Indonesia dapat mempertahankan pertumbuhan yang kuat dan mengatasi potensi tantangan ke depan dengan beberapa inisiatif, di antaranya melanjutkan penerapan reformasi pajak yang akan membantu menciptakan ruang bagi investasi dan menciptakan ketahanan terhadap goncangan.
+                Kemudian, penetapan harga berbasis aturan untuk energi yang dapat menekan subsidi, serta menerapkan program jaring pengaman sosial yang dapat ditargetkan secara lebih efektif dan diperluas untuk menciptakan jaminan perlindungan.
             </p>
         </div>
     </div>
+    
+    
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
